@@ -1,0 +1,62 @@
+tax_id,tax_name,lineage,rank
+2374,Acetonema longum,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Negativicutes; Selenomonadales; Sporomusaceae; Acetonema,species
+905,Acidaminococcus fermentans,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Negativicutes; Acidaminococcales; Acidaminococcaceae; Acidaminococcus,species
+28117,Alistipes putredinis,cellular organisms; Bacteria; FCB group; Bacteroidetes/Chlorobi group; Bacteroidetes; Bacteroidia; Bacteroidales; Rikenellaceae; Alistipes,species
+33029,Anaerococcus hydrogenalis,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Tissierellia; Tissierellales; Peptoniphilaceae; Anaerococcus,species
+33032,Anaerococcus lactolyticus,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Tissierellia; Tissierellales; Peptoniphilaceae; Anaerococcus,species
+33034,Anaerococcus prevotii,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Tissierellia; Tissierellales; Peptoniphilaceae; Anaerococcus,species
+33036,Anaerococcus tetradius,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Tissierellia; Tissierellales; Peptoniphilaceae; Anaerococcus,species
+33037,Anaerococcus vaginalis,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Tissierellia; Tissierellales; Peptoniphilaceae; Anaerococcus,species
+214853,Anaerofustis stercorihominis,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Eubacteriaceae; Anaerofustis,species
+105841,Anaerostipes caccae,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Lachnospiraceae; Anaerostipes,species
+169435,Anaerotruncus colihominis,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Ruminococcaceae; Anaerotruncus,species
+84378,Brachyspira murdochii,cellular organisms; Bacteria; Spirochaetes; Spirochaetia; Brachyspirales; Brachyspiraceae; Brachyspira,species
+52584,Brachyspira pilosicoli,cellular organisms; Bacteria; Spirochaetes; Spirochaetia; Brachyspirales; Brachyspiraceae; Brachyspira,species
+45851,Butyrivibrio crossotus,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Lachnospiraceae; Butyrivibrio,species
+831,Butyrivibrio fibrisolvens,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Lachnospiraceae; Butyrivibrio,species
+43305,Butyrivibrio proteoclasticus,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Lachnospiraceae; Butyrivibrio,species
+1491,Clostridium botulinum,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Clostridiaceae; Clostridium,species
+1492,Clostridium butyricum,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Clostridiaceae; Clostridium,species
+1502,Clostridium perfringens,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Clostridiaceae; Clostridium,species
+84030,[Clostridium] saccharolyticum,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Lachnospiraceae; Lachnoclostridium,species
+1509,Clostridium sporogenes,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Clostridiaceae; Clostridium,species
+1512,[Clostridium] symbiosum,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Lachnospiraceae; Lachnoclostridium,species
+116085,Coprococcus catus,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Lachnospiraceae; Coprococcus,species
+410072,Coprococcus comes,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Lachnospiraceae; Coprococcus,species
+33043,Coprococcus eutactus,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Lachnospiraceae; Coprococcus,species
+29322,[Eubacterium] cellulosolvens,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Eubacteriaceae; Eubacterium,species
+39484,Agathobaculum desmolans,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Ruminococcaceae; Agathobaculum,species
+31971,Absiella dolichum,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Erysipelotrichia; Erysipelotrichales; Erysipelotrichaceae; Absiella,species
+39488,[Eubacterium] hallii,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Eubacteriaceae; Eubacterium,species
+1736,Eubacterium limosum,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Eubacteriaceae; Eubacterium,species
+39491,[Eubacterium] rectale,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Lachnospiraceae; unclassified Lachnospiraceae,species
+51123,[Eubacterium] saphenum,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Clostridiales incertae sedis; Clostridiales Family XIII. Incertae Sedis,species
+39496,Eubacterium ventriosum,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Eubacteriaceae; Eubacterium,species
+39498,[Eubacterium] yurii,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Peptostreptococcaceae; Peptoanaerobacter,species
+853,Faecalibacterium prausnitzii,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Ruminococcaceae; Faecalibacterium,species
+849,Fusobacterium gonidiaformans,cellular organisms; Bacteria; Fusobacteria; Fusobacteriia; Fusobacteriales; Fusobacteriaceae; Fusobacterium,species
+850,Fusobacterium mortiferum,cellular organisms; Bacteria; Fusobacteria; Fusobacteriia; Fusobacteriales; Fusobacteriaceae; Fusobacterium,species
+851,Fusobacterium nucleatum,cellular organisms; Bacteria; Fusobacteria; Fusobacteriia; Fusobacteriales; Fusobacteriaceae; Fusobacterium,species
+861,Fusobacterium ulcerans,cellular organisms; Bacteria; Fusobacteria; Fusobacteriia; Fusobacteriales; Fusobacteriaceae; Fusobacterium,species
+856,Fusobacterium varium,cellular organisms; Bacteria; Fusobacteria; Fusobacteriia; Fusobacteriales; Fusobacteriaceae; Fusobacterium,species
+1735,Holdemanella biformis,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Erysipelotrichia; Erysipelotrichales; Erysipelotrichaceae; Holdemanella,species
+467210,Lachnoanaerobaculum saburreum,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Lachnospiraceae; Lachnoanaerobaculum,species
+187326,Megasphaera micronuciformis,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Negativicutes; Veillonellales; Veillonellaceae; Megasphaera,species
+28118,Odoribacter splanchnicus,cellular organisms; Bacteria; FCB group; Bacteroidetes/Chlorobi group; Bacteroidetes; Bacteroidia; Bacteroidales; Odoribacteraceae; Odoribacter,species
+1496,Clostridioides difficile,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Peptostreptococcaceae; Clostridioides,species
+507750,Peptoniphilus duerdenii,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Tissierellia; Tissierellales; Peptoniphilaceae; Peptoniphilus,species
+54005,Peptoniphilus harei,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Tissierellia; Tissierellales; Peptoniphilaceae; Peptoniphilus,species
+33031,Peptoniphilus lacrimalis,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Tissierellia; Tissierellales; Peptoniphilaceae; Peptoniphilus,species
+28123,Porphyromonas asaccharolytica,cellular organisms; Bacteria; FCB group; Bacteroidetes/Chlorobi group; Bacteroidetes; Bacteroidia; Bacteroidales; Porphyromonadaceae; Porphyromonas,species
+28124,Porphyromonas endodontalis,cellular organisms; Bacteria; FCB group; Bacteroidetes/Chlorobi group; Bacteroidetes; Bacteroidia; Bacteroidales; Porphyromonadaceae; Porphyromonas,species
+837,Porphyromonas gingivalis,cellular organisms; Bacteria; FCB group; Bacteroidetes/Chlorobi group; Bacteroidetes; Bacteroidia; Bacteroidales; Porphyromonadaceae; Porphyromonas,species
+281920,Porphyromonas uenonis,cellular organisms; Bacteria; FCB group; Bacteroidetes/Chlorobi group; Bacteroidetes; Bacteroidia; Bacteroidales; Porphyromonadaceae; Porphyromonas,species
+556499,Propionibacterium acidifaciens,cellular organisms; Bacteria; Terrabacteria group; Actinobacteria; Actinobacteria; Propionibacteriales; Propionibacteriaceae; Propionibacterium,species
+113287,Pseudoramibacter alactolyticus,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Eubacteriaceae; Pseudoramibacter,species
+301301,Roseburia hominis,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Lachnospiraceae; Roseburia,species
+166486,Roseburia intestinalis,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Lachnospiraceae; Roseburia,species
+360807,Roseburia inulinivorans,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Lachnospiraceae; Roseburia,species
+177972,Shuttleworthia satelles,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Lachnospiraceae; Shuttleworthia,species
+214851,Subdoligranulum variabile,cellular organisms; Bacteria; Terrabacteria group; Firmicutes; Clostridia; Clostridiales; Ruminococcaceae; Subdoligranulum,species
+162,Treponema phagedenis,cellular organisms; Bacteria; Spirochaetes; Spirochaetia; Spirochaetales; Spirochaetaceae; Treponema,species
+69710,Treponema vincentii,cellular organisms; Bacteria; Spirochaetes; Spirochaetia; Spirochaetales; Spirochaetaceae; Treponema,species
