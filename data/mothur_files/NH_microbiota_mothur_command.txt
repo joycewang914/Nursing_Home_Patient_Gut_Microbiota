@@ -1,0 +1,64 @@
+## pre-processing steps:
+make.contigs(file=NH_microbiota.files, processors=2)
+summary.seqs(fasta=NH_microbiota.trim.contigs.fasta, processors=2)
+screen.seqs(fasta=NH_microbiota.trim.contigs.fasta, group=NH_microbiota.contigs.groups, maxambig=0, maxlength=275, processors=2)
+unique.seqs(fasta=NH_microbiota.trim.contigs.good.fasta)
+count.seqs(name=NH_microbiota.trim.contigs.good.names, group=NH_microbiota.contigs.good.groups)
+summary.seqs(count=NH_microbiota.trim.contigs.good.count_table, processors=2)
+pcr.seqs(fasta=../../db/Silva.seed_v132/silva.seed_v132.align, start=11894, end=25319, keepdots=F, processors=2)
+system(mv ../../db/Silva.seed_v132/silva.seed_v132.pcr.align silva.v4.fasta)
+summary.seqs(fasta=silva.v4.fasta, processors=2)
+align.seqs(fasta=NH_microbiota.trim.contigs.good.unique.fasta, reference=silva.v4.fasta, processors=2)
+summary.seqs(fasta=NH_microbiota.trim.contigs.good.unique.align, count=NH_microbiota.trim.contigs.good.count_table, processors=2)
+screen.seqs(fasta=NH_microbiota.trim.contigs.good.unique.align, count=NH_microbiota.trim.contigs.good.count_table, summary=NH_microbiota.trim.contigs.good.unique.summary, start=1968, end=11550, maxhomop=8, processors=2)
+summary.seqs(fasta=current, count=current, processors=2)
+filter.seqs(fasta=NH_microbiota.trim.contigs.good.unique.good.align, vertical=T, trump=., processors=2)
+unique.seqs(fasta=NH_microbiota.trim.contigs.good.unique.good.filter.fasta, count=NH_microbiota.trim.contigs.good.good.count_table)
+pre.cluster(fasta=NH_microbiota.trim.contigs.good.unique.good.filter.unique.fasta, count=NH_microbiota.trim.contigs.good.unique.good.filter.count_table, diffs=2, processors=2)
+chimera.uchime(fasta=NH_microbiota.trim.contigs.good.unique.good.filter.unique.precluster.fasta, count=NH_microbiota.trim.contigs.good.unique.good.filter.unique.precluster.count_table, dereplicate=t, processors=2)
+remove.seqs(fasta=NH_microbiota.trim.contigs.good.unique.good.filter.unique.precluster.fasta, accnos=NH_microbiota.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.accnos)
+summary.seqs(fasta=current, count=current, processors=2)
+classify.seqs(fasta=NH_microbiota.trim.contigs.good.unique.good.filter.unique.precluster.pick.fasta, count=NH_microbiota.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.count_table, reference=../../db/trainset16_022016.rdp/trainset16_022016.rdp.fasta, taxonomy=../../db/trainset16_022016.rdp/trainset16_022016.rdp.tax, cutoff=80)
+remove.lineage(fasta=NH_microbiota.trim.contigs.good.unique.good.filter.unique.precluster.pick.fasta, count=NH_microbiota.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.count_table, taxonomy=NH_microbiota.trim.contigs.good.unique.good.filter.unique.precluster.pick.rdp.wang.taxonomy, taxon=Chloroplast-Mitochondria-unknown-Archaea-Eukaryota)
+count.seqs(name=current, group=current)
+count.groups(count=NH_microbiota.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.count_table)
+
+## OTU clustering:
+#remove.groups(count=current, fasta=current, taxonomy=current, groups=)
+#if cluster.split not working, try cluster.split/dist.seqs:
+# note: worked with only clinical samples
+cluster.split(fasta=NH_microbiota.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.fasta, count=NH_microbiota.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.count_table, taxonomy=NH_microbiota.trim.contigs.good.unique.good.filter.unique.precluster.pick.rdp.wang.pick.taxonomy, splitmethod=classify, taxlevel=4, cutoff=0.03, processors=1)
+#dist.seqs(fasta=NH_microbiota.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.fasta, cutoff=0.15)
+#cluster(column=NH_microbiota.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.dist, count=NH_microbiota.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.count_table)
+
+## rename files for ease:
+system(mv NH_microbiota.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.opti_mcc.unique_list.list NH_microbiota.final.list)
+system(mv NH_microbiota.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.fasta NH_microbiota.final.fasta)
+system(mv NH_microbiota.trim.contigs.good.unique.good.filter.unique.precluster.pick.rdp.wang.pick.taxonomy NH_microbiota.final.taxonomy)
+system(mv NH_microbiota.trim.contigs.good.unique.good.filter.unique.precluster.denovo.uchime.pick.pick.count_table NH_microbiota.final.count_table)
+system(mkdir single_files)
+system(mv *.map single_files)
+
+## make OTUs and calculate metrics:
+count.groups(count=NH_microbiota.final.count_table)
+make.shared(list=NH_microbiota.final.list, count=NH_microbiota.final.count_table, label=0.03)
+classify.otu(list=NH_microbiota.final.list, count=NH_microbiota.final.count_table, taxonomy=NH_microbiota.final.taxonomy, label=0.03)
+#remove.groups(count=NH_microbiota.final.count_table, fasta=NH_microbiota.final.fasta, taxonomy=NH_microbiota.final.taxonomy, list=NH_microbiota.final.list, shared=NH_microbiota.final.shared, groups=)
+
+## no subsampling or filtering results (will include some controls):
+#remove.groups(shared=NH_microbiota.final.shared, groups=)
+dist.shared(shared=NH_microbiota.final.shared, calc=thetayc, subsample=F, iters=1000)
+pcoa(phylip=NH_microbiota.final.thetayc.0.03.lt.dist)
+nmds(phylip=NH_microbiota.final.thetayc.0.03.lt.dist, mindim=3, maxdim=3)
+summary.shared(shared=NH_microbiota.final.shared, calc=sharedsobs-braycurtis-spearman-thetayc-jsd-sharednseqs-sharedsobs)
+summary.single(shared=NH_microbiota.final.shared, calc=invsimpson-shannon-npshannon-sobs-chao-nseqs)
+system(mv *.rabund single_files)
+
+## filtering (but no subsampling):
+# did not do immediately:
+#filter.shared(shared=NH_microbiota.final.0.03.pick.shared, minpercentsamples=2, makerare=T, minpercent=0.0001)
+#summary.shared(shared=NH_microbiota.final.0.03.pick.0.03.filter.shared, calc=sharedsobs-braycurtis-spearman-thetayc-jsd-sharednseqs)
+#summary.single(shared=NH_microbiota.final.0.03.pick.0.03.filter.shared, calc=simpsoneven-simpson-invsimpson-shannon-npshannon-sobs-chao-nseqs)
+#dist.shared(shared=NH_microbiota.final.0.03.pick.0.03.filter.shared, calc=thetayc-jclass-jest)
+#pcoa(phylip=NH_microbiota.final.0.03.pick.0.03.filter.thetayc.0.03.lt.dist)
+#nmds(phylip=NH_microbiota.final.0.03.pick.0.03.filter.thetayc.0.03.lt.dist, mindim=3, maxdim=3)
