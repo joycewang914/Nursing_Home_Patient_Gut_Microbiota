@@ -1,0 +1,4 @@
+# function to blast mothur representative sequences:
+
+blastn -db blastdb/SILVA_132_SSURef_Nr99_tax_silva.fasta -query NH_microbiota.trim.contigs.good.unique.good.filter.unique.precluster.pick.pick.opti_mcc.0.03.rep.fasta -out testblast -evalue 1e-10 -outfmt '6 qseqid sseqid evalue bitscore sgi sacc staxids sscinames scomnames stitle'
+
